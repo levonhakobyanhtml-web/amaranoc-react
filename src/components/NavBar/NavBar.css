@@ -1,29 +1,36 @@
 .sidebar-filter-container {
+ display: flex;
+ position: absolute;
+border: 1px solid grey;
+ flex-direction: column;
   width: 320px;
   padding: 16px;
   background-color: #ffffff;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, sans-serif;
-  color: #111827;
+  top: 100px;
 }
 
 .filter-section {
+  margin-left: 10px;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #f0f0f0;
+
 }
 
 .filter-title {
-  font-size: 15px;
+  position:absolute;
+  margin-top:-50px;
+  padding-top: 10px;
+  font-size: 12px;
   font-weight: 700;
   margin-bottom: 12px;
+  margin-left: 5px;
   color: #111827;
 }
 
 /* Region Checklist Filter */
 .region-list {
-  display: flex;
-  flex-direction: column;
+    display: inline;
   gap: 10px;
   max-height: 220px;
   overflow-y: auto;
@@ -38,7 +45,9 @@
 }
 
 .region-item input[type="checkbox"] {
-  width: 16px;
+  background-color: #ff0000;
+  accent-color:orange;
+   width: 16px;
   height: 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -78,11 +87,17 @@
 }
 
 .price-inputs {
+
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 200px;
 }
-
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .price-input-wrapper input {
   width: 100%;
   padding: 8px 12px;
@@ -91,6 +106,7 @@
   font-size: 14px;
   box-sizing: border-box;
   outline: none;
+
 }
 
 .price-input-wrapper input::placeholder {

@@ -1,5 +1,6 @@
-:root {
+body {
   margin: 0;
-  background-color: #ffffff; /* Կամ ուղղակի white */
-  color: #000000; /* Տեքստի գույնը դարձնում ենք սև, որ երևա */
+  background-color: #ffffff;
+  color: #111827;
+  font-family: sans-serif;
 }

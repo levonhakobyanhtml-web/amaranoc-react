@@ -18,7 +18,7 @@ export default function RegionFilter({ selectedRegions = [], onChange }) {
   };
 
   return (
-    <div className="filter-section">
+    <div className="filter-section" style={{marginTop:"200px"}}>
       <div className="filter-title">Տարածաշրջան</div>
       <div className="region-list">
         {regionsData.map((region) => (
