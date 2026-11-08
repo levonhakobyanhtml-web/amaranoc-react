@@ -7,7 +7,7 @@ import "./components/NavBar/NavBar.css"
 // import AllowedPeopleNightFilter from './components/NavBar/AllowedPeopleNightFilter';
 // import BathroomsCount from './components/NavBar/BathroomsCount';
 // import OverNightFilter from './components/NavBar/OverNightFilter';
-// import PeopleCount from './components/NavBar/PeopleCount';
+import PeopleCount from './components/NavBar/PeopleCount';
 // import Pool from './components/NavBar/Pool';
 import PriceFilter from './components/NavBar/PriceFilter';
 import RegionFilter from './components/NavBar/RegionFilter';
@@ -47,8 +47,11 @@ export function App() {
         maxPrice={filters.maxPrice} 
         setMaxPrice={(val) => updateFilter('maxPrice', val)}
   />
-  {/*<PeopleCount />
-  <OverNightFilter />
+   <PeopleCount 
+   count={filters.peopleCount} 
+        setCount={(val) => updateFilter('peopleCount', val)}
+   />
+  {/*<OverNightFilter />
   <AllowedPeopleNightFilter />
   <RoomsCount />
   <BathroomsCount />
