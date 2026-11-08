@@ -5,10 +5,10 @@ import Search from "./components/header/SearchBox";
 import Category from "./components/NavBar/Categories";
 import "./components/NavBar/NavBar.css"
 import AllowedPeopleNightFilter from './components/NavBar/AllowedPeopleNightFilter';
-// import BathroomsCount from './components/NavBar/BathroomsCount';
+import BathroomsCount from './components/NavBar/BathroomsCount';
 import OverNightFilter from './components/NavBar/OverNightFilter';
 import PeopleCount from './components/NavBar/PeopleCount';
-// import Pool from './components/NavBar/Pool';
+import Pool from './components/NavBar/Pool';
 import RoomsCount from './components/NavBar/RoomsCount';
 import PriceFilter from './components/NavBar/PriceFilter';
 import RegionFilter from './components/NavBar/RegionFilter';
@@ -60,9 +60,11 @@ export function App() {
         selected={filters.roomsCount}
         setSelected={(val) => updateFilter('roomsCount', val)}
       />
-      {/* 
-  <BathroomsCount />
-  <Pool /> */}
+  <BathroomsCount selected={filters.bathroomsCount} 
+        setSelected={(val) => updateFilter('bathroomsCount', val)}/>
+  <Pool selected={filters.pool} 
+        setSelected={(val) => updateFilter('pool', val)} /> 
+      
     </div>
 
   );

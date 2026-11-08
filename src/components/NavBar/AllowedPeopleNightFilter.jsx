@@ -3,7 +3,7 @@ import React from 'react';
 export default function AllowedPeopleNightFilter({ count = 0, setCount }) {
   return (
     <div className="filter-section">
-      <div className="filter-title">Մարդկանց թույլատրելի քանակը գիշերակացով</div>
+      <div className="filter-title">Մարդկանց թույլատրելի քանակը <br/>գիշերակացով</div>
       <div className="counter-control">
         <button
           className="counter-btn"
