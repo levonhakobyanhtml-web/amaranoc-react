@@ -4,9 +4,9 @@ import Text from "./components/header/headerTexts";
 import Search from "./components/header/SearchBox";
 import Category from "./components/NavBar/Categories";
 import "./components/NavBar/NavBar.css"
-// import AllowedPeopleNightFilter from './components/NavBar/AllowedPeopleNightFilter';
+import AllowedPeopleNightFilter from './components/NavBar/AllowedPeopleNightFilter';
 // import BathroomsCount from './components/NavBar/BathroomsCount';
-// import OverNightFilter from './components/NavBar/OverNightFilter';
+import OverNightFilter from './components/NavBar/OverNightFilter';
 import PeopleCount from './components/NavBar/PeopleCount';
 // import Pool from './components/NavBar/Pool';
 import PriceFilter from './components/NavBar/PriceFilter';
@@ -51,9 +51,11 @@ export function App() {
    count={filters.peopleCount} 
         setCount={(val) => updateFilter('peopleCount', val)}
    />
-  {/*<OverNightFilter />
-  <AllowedPeopleNightFilter />
-  <RoomsCount />
+  <OverNightFilter value={filters.overNight} 
+        onChange={(val) => updateFilter('overNight', val)} />
+  <AllowedPeopleNightFilter count={filters.allowedPeopleNight} 
+        setCount={(val) => updateFilter('allowedPeopleNight', val)}/>
+  {/*<RoomsCount />
   <BathroomsCount />
   <Pool /> */}
     </div>
