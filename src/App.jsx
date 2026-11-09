@@ -15,6 +15,7 @@ import RegionFilter from './components/NavBar/RegionFilter';
 import CardLine1 from './components/Cards/CardLine1';
 import CardLine2 from './components/Cards/CardLine2';
 import CardLine3 from './components/Cards/CardLine3';
+import CardLine4 from './components/Cards/CardLine4';
 import "./App.css"
 export function App() {
   const [filters, setFilters] = useState({
@@ -70,6 +71,7 @@ export function App() {
       <CardLine1/>
       <CardLine2/>
       <CardLine3/>
+      <CardLine4/>
     </div>
 
   );
