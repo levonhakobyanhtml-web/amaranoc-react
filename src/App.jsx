@@ -17,7 +17,10 @@ import CardLine2 from './components/Cards/CardLine2';
 import CardLine3 from './components/Cards/CardLine3';
 import CardLine4 from './components/Cards/CardLine4';
 import Announcement from './components/announcement/announcement';
+import FooterText from './components/footer/footerText';
+
 import './components/announcement/Announcement.css';
+import './components/footer/footer.css';
 import "./App.css"
 export function App() {
   const [filters, setFilters] = useState({
@@ -75,6 +78,7 @@ export function App() {
       <CardLine3/>
       <CardLine4/>
       <Announcement/>
+      <FooterText />
     </div>
 
   );

@@ -1,0 +1,101 @@
+.footer-section {
+  position: relative;
+  background-color: #0b131e;
+  color: #ffffff;
+  padding-top: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Վերնագիր (Anton ֆոնտով) */
+.footer-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Կոնտակտների շարք */
+.footer-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.contact-item .icon {
+  font-size: 16px;
+}
+
+/* Գաղտնիության քաղաքականություն */
+.footer-privacy {
+  margin-bottom: 25px;
+}
+
+.footer-privacy a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 14px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footer-privacy a:hover {
+  opacity: 1;
+}
+
+/* Ընկերության անվանումներ ներքևում */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Սարերի դեկորատիվ հատված ներքևում */
+.footer-mountains {
+  width: 100%;
+  height: 120px;
+  background-image: url('../../assets/mountains.png'); /* Եթե սարերի նկարն ունեք assets-ում, կարող եք միացնել, կամ թողնել ստորև գրված պայմանական գծային ոճը */
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.8;
+}
+
+/* Responsive (հեռախոսների և պլանշետների համար) */
+@media (max-width: 768px) {
+  .footer-contacts {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
