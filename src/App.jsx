@@ -12,6 +12,7 @@ import Pool from './components/NavBar/Pool';
 import RoomsCount from './components/NavBar/RoomsCount';
 import PriceFilter from './components/NavBar/PriceFilter';
 import RegionFilter from './components/NavBar/RegionFilter';
+import CardLine1 from './components/Cards/CardLine1';
 import "./App.css"
 export function App() {
   const [filters, setFilters] = useState({
@@ -64,7 +65,7 @@ export function App() {
         setSelected={(val) => updateFilter('bathroomsCount', val)}/>
   <Pool selected={filters.pool} 
         setSelected={(val) => updateFilter('pool', val)} /> 
-      
+      <CardLine1/>
     </div>
 
   );

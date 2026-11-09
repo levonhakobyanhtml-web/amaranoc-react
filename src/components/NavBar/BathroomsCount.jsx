@@ -10,7 +10,7 @@ export default function BathroomsCount({ selected = 'all', setSelected }) {
 
   return (
     <div className="filter-section">
-      <div className="filter-title">Սանիտարական հանգույցների քանակ</div>
+      <div className="filter-title">Սանհանգույցների քանակ</div>
       <div className="pill-group">
         {options.map((opt) => (
           <button

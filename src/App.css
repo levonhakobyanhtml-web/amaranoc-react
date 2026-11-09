@@ -1,6 +1,6 @@
-body {
+body, html {
+  background-color: #ffffff !important;
   margin: 0;
-  background-color: #ffffff;
-  color: #111827;
-  font-family: sans-serif;
+  padding: 0;
+  min-height: 100vh;
 }
