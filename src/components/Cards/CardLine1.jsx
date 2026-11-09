@@ -7,23 +7,23 @@ export default function CardLine1() {
     {
       id: 1,
       image: 'https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1705829500856--0.9156560389221753image.webp&w=1920&q=75',
-      location: 'Ստեփանավան',
+      location: 'Ծախկաձոր',
       capacity: 6,
       price: '45,000'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80',
+      image: 'https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1778660910917--0.5990204695636232image.webp&w=1920&q=75',
       location: 'Դիլիջան',
-      capacity: 4,
-      price: '25,000'
+      capacity:10,
+      price: '35,000'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
-      location: 'Դիլիջան',
-      capacity: 4,
-      price: '25,000'
+      image: 'https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1793105950875--0.5012007430617718image.webp&w=1920&q=75',
+      location: 'Բյուրական',
+      capacity: 5,
+      price: '40,000'
     }
   ];
 
