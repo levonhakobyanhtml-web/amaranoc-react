@@ -6,7 +6,7 @@ export default function CardItem({ image, title, location, capacity, price }) {
     <div className="card-item">
       <div className="card-image-container">
         <img src={image} alt={title || "Տնակ"} className="card-img" />
-        {/* Կետերը սլայդերի համար */}
+        {}
         <div className="card-dots">
           <span className="dot active"></span>
           <span className="dot"></span>
@@ -16,7 +16,7 @@ export default function CardItem({ image, title, location, capacity, price }) {
           <span className="dot"></span>
           <span className="dot"></span>
         </div>
-        {/* Սիրտիկի կոճակը */}
+        {}
         <button className="card-fav-btn">
           ❤️
         </button>

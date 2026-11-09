@@ -5,6 +5,13 @@
   margin-top: -700px;
   box-sizing: border-box;
 }
+.card-line-section2 {
+  width: 100%;
+  padding: 20px;
+  margin-left: 230px;
+  margin-top:00px;
+  box-sizing: border-box;
+}
 
 .card-line-header {
   display: flex;
